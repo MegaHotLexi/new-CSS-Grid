@@ -22,6 +22,7 @@ h1{
     grid-template-columns: auto;
     grid-template-areas:  
     'header'
+    'mkuva1'
     'mainos'
     'main'
     'footer';
