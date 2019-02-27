@@ -2,52 +2,74 @@
 }
 
 body{
-    background-color: rgb(225, 221, 247); 
-    text-align: center;
-    
+  background-color: white;
+  justify-self: center;
+
+
+   
 }
 
-
-h3{
-    color: blue;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-}
-
-h1{
-
-}
 
 .wrapper{
     display: grid;
-    grid-template-columns: auto;
+    grid-template-columns: 700px;
     grid-template-areas:  
     'header'
     'mkuva1'
     'mainos'
     'main'
+    'ohje'
     'footer';
     width: 900px;
     text-align: center;
     padding: 0 30px;
     margin: 0;
     justify-self: center;
+    background: linear-gradient(180deg,rgb(225, 221, 247) ,rgb(225,221,247), #ffffff, #ffffff);
+
+    
+}
+
+h3{
+    color: rgb(255, 0, 0);
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .main{
     display: grid;
-    grid-template-columns: 450px 450px;
+    grid-template-columns: 200px 350px;
     grid-template-areas: 
     'vasen oikea';
     margin:0 50px
 }
 
 .mkuva1{
-    background-color: #216158;
+   
     height: 300px;
-    width: 900px;
-    justify-self: center;
+    width: 600px;
+    text-align: center;
+}
+.vasen{
+    padding: 20px;
 }
 
+.oikea{
+    padding: 20px;
+}
+
+.ohje{
+  display: grid;
+  grid-template-columns: 250px 250px 250px;
+  grid-template-rows: auto;
+  grid-template-areas: 
+  'o1 o2 o3';  
+}
+
+.o1{
+  grid-column: 1/2;
+  grid-row: 1/2;
+  margin: 20px
+}
 /* Varaa täst nappula*/
 
 .button {
@@ -68,7 +90,7 @@ h1{
   font-weight: 900;
   font-style: normal;
   text-shadow: 0px 1px 0px rgba(100%,100%,100%,0.5)
-  }
+}
   .button > div {
     color: #372;
   font-size: 10px;
@@ -77,9 +99,9 @@ h1{
   font-style: italic;
   text-align: center;
   margin: -3px 0px 0px 0px
-  }
+}
   .button > i {
-    color: #e900ff;
+  color: #e900ff;
   font-size: 1.1em;
   background: #fff;
   border-radius: 100px;
@@ -90,7 +112,11 @@ h1{
   position: absolute;
   top: 0px;
   right: 0px
-  }
-  .button > .ld {
+}
+.button > .ld {
     font-size: initial
-  }
+}
+
+.footer{
+  margin-top: 105px; 
+}
